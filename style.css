@@ -20,13 +20,28 @@ max-width: 1100px;
 margin: auto;
 }
 
-/* Header */
+/* =========================
+HEADER
+========================= */
 
 header {
 background: linear-gradient(135deg, #0f172a, #1e3a8a);
 color: white;
 text-align: center;
-padding: 70px 20px;
+padding: 60px 20px;
+}
+
+/* Profile Photo */
+
+.profile-photo {
+width: 120px;
+height: 120px;
+object-fit: cover;
+border-radius: 50%;
+display: block;
+margin: 0 auto 20px auto;
+border: 4px solid white;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 header h1 {
@@ -44,7 +59,9 @@ font-size: 16px;
 opacity: 0.9;
 }
 
-/* CV Button */
+/* =========================
+CV BUTTON
+========================= */
 
 .cv-button {
 display: inline-block;
@@ -63,7 +80,9 @@ transform: translateY(-2px);
 background: #e5e7eb;
 }
 
-/* Navigation */
+/* =========================
+NAVIGATION
+========================= */
 
 nav {
 background: #111827;
@@ -90,7 +109,9 @@ nav a:hover {
 background: #2563eb;
 }
 
-/* Main */
+/* =========================
+MAIN CONTENT
+========================= */
 
 main {
 padding: 35px 0;
@@ -117,7 +138,9 @@ color: #111827;
 margin-top: 0;
 }
 
-/* Cards */
+/* =========================
+CARDS
+========================= */
 
 .card {
 background: #f8fafc;
@@ -135,7 +158,9 @@ margin-bottom: 0;
 margin-bottom: 7px;
 }
 
-/* Technical Skills Grid */
+/* =========================
+TECHNICAL SKILLS GRID
+========================= */
 
 .grid {
 display: grid;
@@ -147,7 +172,9 @@ gap: 18px;
 margin: 0;
 }
 
-/* Links */
+/* =========================
+LINKS
+========================= */
 
 a {
 color: #2563eb;
@@ -166,7 +193,9 @@ text-decoration: underline;
 color: #6b7280;
 }
 
-/* Notes */
+/* =========================
+NOTES
+========================= */
 
 .note {
 background: #f1f5f9;
@@ -174,7 +203,9 @@ padding: 15px;
 border-radius: 7px;
 }
 
-/* Footer */
+/* =========================
+FOOTER
+========================= */
 
 footer {
 background: #111827;
@@ -184,12 +215,19 @@ padding: 25px 15px;
 margin-top: 30px;
 }
 
-/* Mobile */
+/* =========================
+MOBILE
+========================= */
 
 @media (max-width: 700px) {
 
 header {
-padding: 50px 15px;
+padding: 45px 15px;
+}
+
+.profile-photo {
+width: 110px;
+height: 110px;
 }
 
 header h1 {
@@ -230,20 +268,8 @@ font-size: 24px;
 .grid {
 grid-template-columns: 1fr;
 }
-/* Profile Photo */
 
-.profile-photo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px auto;
-  border: 4px solid white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
 .cv-button {
 padding: 12px 20px;
 }
- 
 }
